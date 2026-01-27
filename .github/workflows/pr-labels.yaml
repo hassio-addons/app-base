@@ -3,13 +3,16 @@ name: PR Labels
 
 # yamllint disable-line rule:truthy
 on:
-  pull_request_target:
+  pull_request_target: # zizmor: ignore[dangerous-triggers]
     types:
       - opened
       - labeled
       - unlabeled
       - synchronize
 
+permissions:
+  pull-requests: read
+
 jobs:
   workflows:
-    uses: hassio-addons/workflows/.github/workflows/pr-labels.yaml@main
+    uses: hassio-addons/workflows/.github/workflows/pr-labels.yaml@19abc57e997a6e14cb4ba35968a442e1fadbfbc2 # main
