@@ -98,8 +98,8 @@ ARG BUILD_REPOSITORY
 
 # Labels
 LABEL \
-    io.hass.name="Addon base for ${BUILD_ARCH}" \
-    io.hass.description="Home Assistant Community Add-on: ${BUILD_ARCH} base image" \
+    io.hass.name="App base for ${BUILD_ARCH}" \
+    io.hass.description="Home Assistant Community App: ${BUILD_ARCH} base image" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="base" \
     io.hass.version=${BUILD_VERSION} \
@@ -107,12 +107,12 @@ LABEL \
     io.hass.base.name="alpine" \
     io.hass.base.image="hassioaddons/base" \
     maintainer="Franck Nijhof <opensource@frenck.dev>" \
-    org.opencontainers.image.title="Addon base for ${BUILD_ARCH}" \
-    org.opencontainers.image.description="Home Assistant Community Add-on: ${BUILD_ARCH} Base image" \
-    org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
+    org.opencontainers.image.title="App base for ${BUILD_ARCH}" \
+    org.opencontainers.image.description="Home Assistant Community App: ${BUILD_ARCH} Base image" \
+    org.opencontainers.image.vendor="Home Assistant Community Apps" \
     org.opencontainers.image.authors="Franck Nijhof <opensource@frenck.dev>" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://addons.community" \
+    org.opencontainers.image.url="https://frenck.dev/home-assistant-apps" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
