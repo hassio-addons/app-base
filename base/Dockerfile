@@ -106,11 +106,11 @@ LABEL \
     io.hass.base.version=${BUILD_VERSION} \
     io.hass.base.name="alpine" \
     io.hass.base.image="hassioaddons/base" \
-    maintainer="Franck Nijhof <frenck@addons.community>" \
+    maintainer="Franck Nijhof <opensource@frenck.dev>" \
     org.opencontainers.image.title="Addon base for ${BUILD_ARCH}" \
     org.opencontainers.image.description="Home Assistant Community Add-on: ${BUILD_ARCH} Base image" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
-    org.opencontainers.image.authors="Franck Nijhof <frenck@addons.community>" \
+    org.opencontainers.image.authors="Franck Nijhof <opensource@frenck.dev>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
