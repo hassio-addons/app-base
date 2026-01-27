@@ -2,8 +2,8 @@
 name: Base Image
 version: dev
 slug: base
-description: Docker base images used by Home Assistant Community Add-ons.
-url: https://github.com/hassio-addons/addon-base
+description: Docker base images used by Home Assistant Community Apps.
+url: https://github.com/hassio-addons/app-base
 arch:
   - aarch64
   - amd64
