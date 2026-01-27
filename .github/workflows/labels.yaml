@@ -7,6 +7,9 @@ on:
     - cron: "34 5 * * *"
   workflow_dispatch:
 
+permissions:
+  issues: write
+
 jobs:
   workflows:
-    uses: hassio-addons/workflows/.github/workflows/labels.yaml@main
+    uses: hassio-addons/workflows/.github/workflows/labels.yaml@19abc57e997a6e14cb4ba35968a442e1fadbfbc2 # main

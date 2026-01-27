@@ -11,6 +11,10 @@ on:
       - synchronize
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   workflows:
-    uses: hassio-addons/workflows/.github/workflows/base-ci.yaml@main
+    uses: hassio-addons/workflows/.github/workflows/base-ci.yaml@19abc57e997a6e14cb4ba35968a442e1fadbfbc2 # main

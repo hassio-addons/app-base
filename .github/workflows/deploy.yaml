@@ -6,12 +6,16 @@ on:
   release:
     types:
       - published
-  workflow_run:
+  workflow_run: # zizmor: ignore[dangerous-triggers]
     workflows: ["CI"]
     branches: [main]
     types:
       - completed
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   workflows:
-    uses: hassio-addons/workflows/.github/workflows/base-deploy.yaml@main
+    uses: hassio-addons/workflows/.github/workflows/base-deploy.yaml@19abc57e997a6e14cb4ba35968a442e1fadbfbc2 # main
