@@ -12,4 +12,4 @@ permissions:
 
 jobs:
   workflows:
-    uses: hassio-addons/workflows/.github/workflows/labels.yaml@3d5603e6f0966551a0c99493171cc2808349b28e # main
+    uses: hassio-addons/workflows/.github/workflows/labels.yaml@2500bd2680137df69f0f45c2602a5a75ca0e77fd # main
