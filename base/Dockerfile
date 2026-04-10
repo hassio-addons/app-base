@@ -39,7 +39,7 @@ RUN \
     && apk add --no-cache \
         libcrypto3=3.5.5-r0 \
         libssl3=3.5.5-r0 \
-        musl-utils=1.2.5-r21 \
+        musl-utils=1.2.5-r22 \
         musl=1.2.5-r22 \
     \
     && apk add --no-cache \
