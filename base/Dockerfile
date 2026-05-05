@@ -19,7 +19,7 @@ ENV \
     S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0 \
     S6_CMD_WAIT_FOR_SERVICES=1 \
     YARN_HTTP_TIMEOUT=1000000 \
-    TERM="xterm-256color" 
+    TERM="xterm-256color"
 
 # Set shell
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
@@ -72,6 +72,7 @@ RUN \
     \
     && mv /tmp/bashio/lib /usr/lib/bashio \
     && ln -s /usr/lib/bashio/bashio /usr/bin/bashio \
+    && sed -i "s/readonly BASHIO_VERSION=\"[^\"]*\"/readonly BASHIO_VERSION=\"${BASHIO_VERSION#v}\"/" /usr/lib/bashio/bashio.sh \
     \
     && curl -L -s -o /usr/bin/tempio \
         "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}" \
