@@ -40,7 +40,7 @@ RUN \
         libcrypto3=3.5.9-r0 \
         libssl3=3.5.9-r0 \
         musl-utils=1.2.6-r2 \
-        musl=1.2.6-r2 \
+        musl=1.2.6-r3 \
     \
     && apk add --no-cache \
         bash=5.3.9-r1 \
